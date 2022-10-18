@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charseth="UTF-8">
+    <title>freecodecamp Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+   <div class="up-container">
+    <header>
+      <h1 id="title">Buch's Geological Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the environment geologically</p>
+    </header>
+   </div>
+   <div class="down-container" >
+      <form id="survey-form" action="mailto:supertimothy58@gmail.com" method="post" enctype="text/plain">
+        <label id="name-label">Name <input class="input-control" id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label">Email <input class="input-control" id="email" type="email" placeholder="Enter your Email" required/></label>
+        <label id="number-label">Age (optional) <input class="input-control" id="number" type="number" placeholder="Age" min="10" max="99" required/></label>
+        <label>Which option best describes your current environment?<select class="input-control" id="dropdown">
+          <option>Select current environment</option>
+          <option>Humid</option>
+          <option>Hyper-Arid</option>
+          <option>Arid</option>
+          <option>Semi-Arid</option>
+          <option>Other</option>
+         </select>
+        </label>
+        <p>Would you recommend that everyone has geology knowldge to help sustain the environment?</p>
+         <div id="radio-1"><input class="radio" type="radio" name="recommend-choice" value="radio-1"/><label for="radio">Definitely</label></div>
+         <div id="radio-2"><input class="radio" type="radio" name="recommend-choice" value="radio-2"/><label for="radio">Maybe</label></div>
+         <div id="radio-3"><input class="radio" type="radio" name="recommend-choice" value="radio-3"/><label for="radio">Not sure</label></div>
+         <p>What area should geology focus more on?</p><select class="input-control" id="dropdown-1">
+          <option>Select an option</option>
+          <option>Mining</option>
+          <option>Hazard control</option>
+        </select>
+        <p>What other areas would you like Geology to focus on? (Check all that apply)</p>
+        <div id="checkbox-1"><input class="radio" type="checkbox" value="checkbox-1"><label for="checkbox">Environmental Geology</label></div>
+        <div id="checkbox-2"><input class="radio" type="checkbox" value="checkbox-2"><label for="checkbox">Mineralogy</label></div>
+        <div id="checkbox-3"><input class="radio" type="checkbox" value="checkbox-3"><label for="checkbox">Sedimentology</label></div>
+        <div id="checkbox-2"><input class="radio" type="checkbox" value="checkbox-4"><label for="checkbox">Paleontology</label></div>
+        <div id="checkbox-5"><input class="radio" type="checkbox" value="checkbox-5"><label for="checkbox">Marine Geology</label></div>
+        <div id="checkbox-6"><input class="radio" type="checkbox" value="checkbox-6"><label for="checkbox">Photogeology</label></div>
+        <div id="checkbox-7"><input class="radio" type="checkbox" value="checkbox-7"><label for="checkbox">Geological Mapping</label></div>
+        <div id="checkbox-8"><input class="radio" type="checkbox" value="checkbox-8"><label for="checkbox">Geology History</label></div>
+        <div id="checkbox-9"><input class="radio" type="checkbox" value="checkbox-9"><label for="checkbox">Exploration and Mining</label></div>
+        <p>Any comment or suggestion?</p>
+        <textarea>Enter your comment here...</textarea>
+        <input id="submit" type="submit">
+      </form>
+    </div>
+  </body>
+</html>
